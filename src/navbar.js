@@ -46,10 +46,10 @@ function Navbar() {
                                 <li><a className="dropdown-item" href="#">Separated link</a></li>
                             </ul>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Active</a>
-                        </li>
                     </ul>
+                    <div className="nav-item" id="itemsb">
+                            <a className="nav-link active" aria-current="page" href="#">Log out</a>
+                        </div>
                 </div>
             </div>
         </nav>
