@@ -1,13 +1,12 @@
 import React from 'react';
 import './footer.css';
 
-function Footer(){
-    return(
+function Footer() {
+    return (
 
 <div className="footer">
-    Faabcharge footer
+            Faabcharge footer
 </div>
-
 
     )
 }
