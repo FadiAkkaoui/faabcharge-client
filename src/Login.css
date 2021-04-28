@@ -1,0 +1,97 @@
+/*START, inloggningsformuläret*/
+.imgcontainer{
+    text-align: center;
+    margin: 24px 0 8px 0;
+}
+/*​​Avatar image​​*/
+img.avatar {
+    width: 43%;
+    max-height: 200px;
+}
+/*​​Glömt lösenord*/
+span.psw{
+    float: right;
+    padding-top: 16px;
+    color: black;
+}
+span a{
+    color: black;
+}
+span a:hover{
+    color: black;
+}
+/*​​Responsivitet​​*/
+@media screen and (max-width: 300px){
+    span.psw{
+        display: block;
+        float: none;
+        color: black;
+    }
+    
+    .cancelbtn{
+        width: 100%;
+    }
+}
+/*Style knappar logga in*/
+Button {
+    background-color: transparent;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 3px 2px;
+    border: 2px solid white;
+    color: white;
+}
+Button:hover {
+    background-color:#F17537;
+    border-color:black;
+    color: white;
+}
+/*​​Extra style for the cancel button (red)*/
+.cancelbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #37365C;
+    border:hidden;
+}
+.cancelbtn:hover{
+    opacity: 0.7;
+    background-color: #37365C;
+}
+/*START, inloggningsformuläret*/
+.loginform {
+    border-radius: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-family: Raleway, sans-serif;
+    background: rgba(200,200,200,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*​​Inputs​​*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 0.5px solid white;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+/*​​Stil för knappar​​*/
+
+.ButtonLogin{
+    background-color: #F17537;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
