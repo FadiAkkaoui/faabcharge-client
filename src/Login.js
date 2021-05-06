@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import logo from './Logo_white.png';
 import './login.css';
+import {Link} from 'react-router-dom';
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -16,6 +17,8 @@ export default function Login() {
   }
 
   return (
+    <div>
+      <img src={logo} width="425" height="" alt="" loading="lazy"></img>
 
     <div className="Login">
         <h1 style={{fontWeight:"bold"}}>Login</h1>
@@ -41,12 +44,15 @@ export default function Login() {
           />
         </Form.Group>
         <div>
-        <Button className="ButtonLogin" block size="lg" type="submit" disabled={!validateForm()} style={{backgroundColor: "#13C803", fontWeight: "bold", justifyContent:"center", marginLeft:"32%"}}>
-          Login
-        </Button>
-        <a style={{display:"block",height: "30px", marginTop:"1px", marginLeft:"19%", color:"white", fontWeight: "bold", fontFamily:"sans-serif"}}>Forgot password</a>
+        <button className="ButtonLogin" block size="lg" type="submit" disabled={!validateForm()} style={{backgroundColor: "#13C803", justifyContent:"center", marginLeft:"32%"}}>
+        <Link to="/main"><a>Login</a></Link>
+        </button>
+        <div className="text">
+        <a style={{display:"block",height: "30px", marginTop:"1px", marginLeft:"19%", color:"white", fontWeight: "bold", fontFamily:"sans-serif"}}><Link to="/main"><a>Forgot password?</a></Link></a>
+        </div>
         </div>
       </Form>
+    </div>
     </div>
   );
 }

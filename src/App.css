@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+.button1{
+  background-color: #22A2F2;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+.button1:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+h1{
+  margin: auto;
+  margin-top: 20px;
+  top: 20px;
+}
